@@ -42,13 +42,13 @@ public:
 
     void PushFront(int value)
     {
-        m_head->next = new ListNode(value, m_head, m_head->next);
+        new ListNode(value, m_head, m_head->next);
         ++m_size;
     }
 
     void PushBack(int value)
     {
-        m_tail->prev = new ListNode(value, m_tail->prev, m_tail);
+        new ListNode(value, m_tail->prev, m_tail);
         ++m_size;
     }
 
